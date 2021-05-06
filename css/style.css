@@ -11,7 +11,7 @@ body {
 }
 
 /*mobile display none*/
-.mob_header, #mob_main_visual, .footer_top_left_list .mob_hide {display: none;}
+.mob_header, #mob_main_visual, .footer_top_left_list .mob_hide, .m_footer_decs {display: none;}
 
 
 /*common*/

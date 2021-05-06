@@ -1,6 +1,6 @@
 $(function() {
 	$('.gnb').each(function() {
-		var $depth1 = $('.depth1'),
+		var $depth1 = $('.gnb .depth1'),
 				$sub_outer = $('.sub_outer'),
 				$sub_bg = $('.sub_bg')
 		$depth1.mouseenter(function() {
@@ -114,8 +114,24 @@ $(function() {
 	});
 	
 	$('.m_menu_bg').on('click', function(){
-		$('.m_menu').css('right', '-50%');
+		$('.m_menu').css('right', '-60%');
 		$('.m_menu_bg').css('display', 'none');
 	});
 	
-});
+	$(".m_menu_list").each(function(){
+		var $m_depth1 = $('.m_menu_list .depth1 > a');
+		var $m_depth2 = $('.m_menu_list .depth2')
+		$m_depth1.on('click', function() {
+			if ($(this).next().css('display') == 'none') {
+				$m_depth2.slideUp();
+				$(this).next().slideDown();
+				$('.m_menu_list .depth1 > a').removeClass('on');
+				$(this).addClass('on');
+
+			} else {
+				$m_depth2.slideUp();
+				$('.m_menu_list .depth1 > a').removeClass('on');
+			};
+		});
+	})
+});;
