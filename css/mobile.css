@@ -20,6 +20,27 @@ header {height: 80px;}
 .mob_header .btn_menu {float: right; font-size: 1.5em;}
 .mob_header h1 {margin: 0 auto; width: 41px;}
 .mob_header h1 img {margin: 0 auto; width: 100%;}
+.mob_header .m_search .m_search_active {display: none;}
+.mob_header .m_search.active i {color: #066a7c;}
+.mob_header .m_search.active .m_search_active {
+	display: inline-block;
+	position: absolute;
+	height: 30px;
+	margin-left: 20px;
+	font-size: 20px;
+	border-bottom: 1px solid #066a7c;
+	background: #fff;
+}
+.mob_header .m_search .m_search_active input {outline: 0; border: 0;}
+.mob_header .m_search .m_search_active a{
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	margin-left: 50px;
+	text-align: center;
+	color: #fff;
+	background: #066a7c;
+}
 
 /*m_menu*/
 
@@ -131,7 +152,7 @@ header {height: 80px;}
 }
 #search .search_bar input {
 	width: 50%;
-	font-size: 20px;
+	font-size: 15px;
 	vertical-align: middle;
 	border: 0; outline: 0;
 	color: #585858;

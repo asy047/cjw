@@ -15,6 +15,9 @@ $(function() {
 			$(this).siblings().children().next().stop().slideUp();
 		})
 	})
+	$('.m_search').on('click', 'a', function(){
+		$('.m_search').toggleClass('active');
+	})
 	var swiper = new Swiper('.mv', {
       slidesPerView: 1,
       spaceBetween: 30,
